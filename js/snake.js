@@ -116,7 +116,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         var me = this,
             playingBoard = config.playingBoard,
             myId = instanceNumber++,
-            growthIncr = 5,
+            growthIncr = 3,
             lastMove = 1,
             preMove = -1,
             isFirstMove = true,
@@ -177,7 +177,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         me.snakeHead = me.snakeBody["b0"];
         me.snakeTail = me.snakeBody["b0"];
         me.snakeHead.elm.className = me.snakeHead.elm.className.replace(/\bsnake-snakebody-dead\b/,'');
-        me.snakeHead.elm.id = "snake-snakehead-alive";
+        me.snakeHead.elm.id = "snake-block-head";
         me.snakeHead.elm.className += " snake-snakebody-alive";
 
         // ----- private methods -----

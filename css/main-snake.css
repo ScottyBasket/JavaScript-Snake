@@ -6,7 +6,7 @@ http://patorjk.com/games/snake
 body {
 	margin:0px;
 	padding:0px;
-    background-color: #FC5454;
+    background-color: #042940;
 }
 
 #game-area {
@@ -24,11 +24,11 @@ body {
 #game-area:focus { outline: none; }
 
 a.snake-link, a.snake-link:link, a.snake-link:visited {
-  color: #FCFC54;
+  color: #005C53;
 }
 
 a.snake-link:hover {
-  color: #FfFf54;
+  color: #005C53;
 }
 
 .snake-pause-screen {
@@ -60,33 +60,39 @@ a.snake-link:hover {
 .snake-snakebody-block {
     margin: 0px;
     padding: 0px;
-    background-color: #FF0000;
+    background-color: #005C53;
+    border-radius:5px;
     position: absolute;
-    border: 0px solid #000080;
     background-repeat: no-repeat;
 }
 
 .snake-snakebody-alive {
-   background-image: url('./css/images/snakeblock.png'), url('./images/snakeblock.png');
+   background-image: url('./css/images/green-head-snakeblock.png'), url('./images/green-head-snakeblock.png');
 }
+
+.snakeblock-head {
+    background-image: url('./css/images/green-head-snakeblock.png'), url('./images/green-head-snakeblock.png');
+ }
+
 .snake-snakebody-dead {
-   background-image: url('./css/images/deadblock.png'), url('./images/deadblock.png');
+   background-image: url('./css/images/matrix-food-block.png'), url('./images/matrix-food-block.png');
 }
 
 .snake-food-block {
     margin: 0px;
     padding: 0px;
     background-color: #FF0000;
-    border: 0px solid #000080;
     position: absolute;
+    border-radius: 15px;
 }
+
 
 .snake-playing-field {
     margin: 0px;
     padding: 0px;
     position: absolute;
-    background-color: #0000A8;
-    border: 0px solid #0000A8;
+    background-color: #DBF227;
+
 }
 
 .snake-game-container {
@@ -114,6 +120,7 @@ a.snake-link:hover {
     margin-left: -158px;
     text-align: center;
     display: block;
+    border-radius: 14px;
 }
 
 .snake-try-again-dialog, .snake-win-dialog {
@@ -132,4 +139,9 @@ a.snake-link:hover {
     margin-left: -158px;
     text-align: center;
     display: none;
+    border-radius: 15px;
+}
+
+span{
+    color:white;
 }
